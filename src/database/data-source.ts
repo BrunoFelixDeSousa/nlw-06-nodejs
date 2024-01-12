@@ -1,6 +1,6 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { CreateUsers1705026924944 } from "./migration/1705026924944-createUsers"
+import { CreateUsers1705026924944 } from "./migrations/1705026924944-createUsers"
 
 export const AppDataSource = new DataSource({
     type: "postgres",
