@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Typescript](https://www.typescriptlang.org/)
 - [Express](https://expressjs.com/pt-br/)
 - [JSONWebToken](https://github.com/auth0/node-jsonwebtoken#readme)
-
+- [Docker](https://www.docker.com/)
 ## 💻 Projeto
 
 Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.
@@ -43,5 +43,7 @@ Valoriza é uma plataforma para promover o reconhecimento entre companheiros de 
 - Rode `yarn` para baixar as dependências
 - Rode `yarn typeorm migration:run` para criar as tabelas do banco de dados.
 - Rode o `yarn dev` para iniciar a aplicação.
+- Rode `docker-compose up -d` para criar e iniciar os contêineres sem os logs
+- Rode `docker-compose down` para paralisar e remover todos os contêineres e seus componentes como rede, imagem e volume.
 
 Por fim, a aplicação estará disponível em `http://localhost:3000`
