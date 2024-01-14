@@ -8,4 +8,4 @@ const app = express()
 AppDataSource.initialize().then( async () => {
     console.log("Database OK")
     app.listen(3000, () => console.log("Server is running 🚀"));
-})
+}).catch((error) => console.log(error))

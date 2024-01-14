@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
     database: "nlw-6-nodejs-valoriza",
     synchronize: true,
     logging: false,
-    entities: [],
+    entities: ["../app/entities/*.ts"],
     migrations: [CreateUsers1705026924944],
     
 })

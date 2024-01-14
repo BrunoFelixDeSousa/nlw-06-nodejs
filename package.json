@@ -7,10 +7,10 @@
     "build": "tsc",
     "dev": "ts-node-dev src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "migration:create": "typeorm migration:create",
+    "migration:create": "yarn typeorm migration:create",
     "migration:run": "yarn typeorm -- -d ./src/database/data-source.ts migration:run",
     "migration:revert": "yarn run typeorm -- -d ./src/database/data-source.ts migration:revert",
-    "entity:create": "typeorm entity:create"
+    "entity:create": "yarn typeorm entity:create"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
