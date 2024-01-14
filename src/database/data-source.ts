@@ -1,6 +1,7 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
 import { CreateUsers1705026924944 } from "./migrations/1705026924944-createUsers"
+import { User } from "../app/entities/User";
 
 export const AppDataSource = new DataSource({
     type: "postgres",
@@ -11,7 +12,7 @@ export const AppDataSource = new DataSource({
     database: "nlw-6-nodejs-valoriza",
     synchronize: true,
     logging: false,
-    entities: ["../app/entities/*.ts"],
+    entities: [User],
     migrations: [CreateUsers1705026924944],
     
 })
