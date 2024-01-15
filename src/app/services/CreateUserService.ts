@@ -28,7 +28,7 @@ export class CreateUserService {
 
             return user;
         } catch (error) {
-            console.error("Erro ao salvar usuário:", error);
+            //console.error("Erro ao salvar usuário:", error);
             throw new Error("Erro interno ao criar usuário");
         }
     }
