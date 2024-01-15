@@ -1,5 +1,5 @@
 import { AppDataSource } from "../../database/data-source";
-import { User } from "../entities/User";
+import {Tag} from "../entities/Tag";
 
-export const TagRepository = AppDataSource.getRepository(User)
+export const tagRepository = AppDataSource.getRepository(Tag)
 
