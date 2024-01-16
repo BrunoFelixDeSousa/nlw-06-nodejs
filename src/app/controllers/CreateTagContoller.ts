@@ -8,7 +8,7 @@ export class CreateTagContoller {
 
         const creatTagService = new CreateTagService()
 
-        const tag = creatTagService.execute(name)
+        const tag = await creatTagService.execute(name)
 
         return response.json(tag)
     }

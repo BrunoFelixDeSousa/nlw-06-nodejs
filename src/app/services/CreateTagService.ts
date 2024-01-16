@@ -16,12 +16,18 @@ export class CreateTagService {
             throw new Error("Tag already exists!");
         }
 
-        const tag = tagRepository.create({
-            name
-        })
-
-        await tagRepository.save(tag)
-
-        return tag
+        try
+        {
+            const tag = tagRepository.create({
+                name
+            })
+    
+            await tagRepository.save(tag)
+    
+            return tag
+        }catch (error) {
+            throw new Error()
+        }
+        
     }
 }
